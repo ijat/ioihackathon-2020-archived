@@ -21,16 +21,23 @@
       document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
       document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
     }
+
+    document.addEventListener('init', function(event) {
+      var page = event.target;
+
+      if (page.id === 'page1') {
+        page.querySelector('#push-button').onclick = function() {
+          document.querySelector('#myNavigator').pushPage('page2.html', {data: {title: 'Page 2'}});
+        };
+      } else if (page.id === 'page2') {
+        page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
+      }
+    });
   </script>
 </head>
 <body>
 
-
 <ons-page>
-  <ons-toolbar>
-    <div class="center">home@IOI</div>
-  </ons-toolbar>
-
   <ons-tabbar swipeable position="bottom">
     <ons-tab page="/modules/home.html" label="Home" icon="md-home" active>
     </ons-tab>
@@ -44,22 +51,6 @@
     </ons-tab>
   </ons-tabbar>
 </ons-page>
-
-<template id="home.html">
-  <ons-page id="home-tab">
-    <p style="text-align: center;">
-      This is the first page.
-    </p>
-  </ons-page>
-</template>
-
-<template id="settings.html">
-  <ons-page id="Tab2">
-    <p style="text-align: center;">
-      This is the second page.
-    </p>
-  </ons-page>
-</template>
 
 </body>
 </html>
