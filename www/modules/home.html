@@ -1,10 +1,206 @@
 <ons-page id="home-tab">
 
-    <ons-toolbar>
-        <div class="center">home@IOI</div>
-    </ons-toolbar>
+    <ons-navigator swipable id="homeNavigator" page="home-index.html"></ons-navigator>
 
-    <p style="text-align: center;">
-        This is the Home page.
-    </p>
+    <template id="home-index.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">home@IOI</div>
+            </ons-toolbar>
+
+            <div class="toast toast--material">
+                <div class="toast__message toast--material__message">Quick access to all home related services</div>
+            </div>
+
+            <ons-card>
+                <div class="title"><i class="zmdi zmdi-home"></i>
+                     My Home</div>
+                <div class="content">Address: 123, Jalan Abc, 123456, Kuala Lumpur Malaysia</div>
+                <div class="content">
+                    <i class="zmdi zmdi-alert-triangle" style="color: orange;"></i> Please check your billing page
+                </div>
+            </ons-card>
+
+            <ons-card onclick="homeNavigator.pushPage('contract-page.html')">
+                <div class="title"><i class="zmdi zmdi-book-image"></i>
+                     Contract</div>
+                <i class="zmdi zmdi-chevron-right" style="float: right;font-size: 30px; margin: -20px 0;"></i>
+                <div class="content">Ends at: 25 July 2020</div>
+            </ons-card>
+
+            <ons-card onclick="homeNavigator.pushPage('smarthome-page.html')">
+                <div class="title"><i class="zmdi zmdi-remote-control"></i>
+                     Smart Home</div>
+                <i class="zmdi zmdi-chevron-right" style="float: right;font-size: 30px; margin: -20px 0;"></i>
+                <div class="content">Manage IoT connected devices</div>
+            </ons-card>
+
+            <ons-card onclick="homeNavigator.pushPage('emergency-page.html')">
+                <div class="title"><i class="zmdi zmdi-assignment-alert"></i>
+                     Emergency Call</div>
+                <i class="zmdi zmdi-chevron-right" style="float: right;font-size: 30px; margin: -20px 0;"></i>
+                <div class="content">Call guards to your home immediately</div>
+            </ons-card>
+        </ons-page>
+    </template>
+
+    <template id="home-details.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Back</ons-back-button></div>
+                <div class="center">My Home</div>
+            </ons-toolbar>
+
+
+        </ons-page>
+    </template>
+
+    <template id="contract-page.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Back</ons-back-button></div>
+                <div class="center">Contract</div>
+            </ons-toolbar>
+
+            <div class="toast toast--material">
+                <div class="toast__message toast--material__message">View  contract details</div>
+            </div>
+
+            <div>
+                <ons-card>
+                    <div class="content" style="font-family: 'Menlo', monospacen;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus faucibus scelerisque eleifend donec pretium. Vel quam elementum pulvinar etiam. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Pharetra pharetra massa massa ultricies. Gravida dictum fusce ut placerat orci nulla. Pulvinar elementum integer enim neque. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit. Risus feugiat in ante metus. Tincidunt nunc pulvinar sapien et ligula. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Sed sed risus pretium quam. Ut faucibus pulvinar elementum integer enim.                        </p>
+                        <p>A scelerisque purus semper eget duis at tellus at urna. Leo urna molestie at elementum eu facilisis. Enim tortor at auctor urna nunc id cursus metus. Mattis ullamcorper velit sed ullamcorper. In pellentesque massa placerat duis ultricies lacus sed. Non nisi est sit amet facilisis magna etiam tempor orci. Viverra vitae congue eu consequat ac felis donec et odio. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Lacinia quis vel eros donec. Magna fringilla urna porttitor rhoncus. Vulputate dignissim suspendisse in est ante. Adipiscing tristique risus nec feugiat in fermentum. Porta non pulvinar neque laoreet suspendisse interdum. Tincidunt dui ut ornare lectus sit amet est placerat. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.                        </p>
+                        <p>Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Pulvinar proin gravida hendrerit lectus. Nullam eget felis eget nunc lobortis mattis aliquam. Nibh mauris cursus mattis molestie a iaculis at erat. Et malesuada fames ac turpis egestas. Amet massa vitae tortor condimentum lacinia. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Libero justo laoreet sit amet. Tempus iaculis urna id volutpat lacus laoreet non. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Eu nisl nunc mi ipsum faucibus vitae. Diam quis enim lobortis scelerisque. Vivamus at augue eget arcu.                        </p>
+                        <p>Netus et malesuada fames ac turpis. A pellentesque sit amet porttitor eget dolor morbi non. Fermentum posuere urna nec tincidunt praesent. Congue eu consequat ac felis donec et odio pellentesque. Consectetur lorem donec massa sapien faucibus et molestie ac. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Vitae purus faucibus ornare suspendisse. Vitae auctor eu augue ut. Elit eget gravida cum sociis. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Dui faucibus in ornare quam viverra. Aliquet bibendum enim facilisis gravida neque convallis a. Nunc non blandit massa enim nec dui nunc. Condimentum id venenatis a condimentum. Mauris vitae ultricies leo integer malesuada. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis.                        </p>
+                        <p>Enim nec dui nunc mattis enim ut. Enim blandit volutpat maecenas volutpat blandit aliquam. Curabitur vitae nunc sed velit dignissim sodales. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Tincidunt dui ut ornare lectus sit. Elit duis tristique sollicitudin nibh sit amet commodo. Sit amet dictum sit amet justo donec enim. Id faucibus nisl tincidunt eget nullam non nisi est. Neque egestas congue quisque egestas diam in arcu cursus euismod. Augue eget arcu dictum varius duis at consectetur. Volutpat ac tincidunt vitae semper quis lectus. Nisl nunc mi ipsum faucibus vitae. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Morbi tincidunt ornare massa eget. Nisl purus in mollis nunc sed id semper risus. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Quam elementum pulvinar etiam non quam lacus suspendisse. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Enim tortor at auctor urna.                        </p>
+                    </div>
+                </ons-card>
+                <ons-card>
+                    Signed on: 25 July 2019
+                </ons-card>
+                <ons-card>
+                    Expired on: 25 July 2020
+                </ons-card>
+            </div>
+
+        </ons-page>
+    </template>
+
+    <template id="smarthome-page.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Back</ons-back-button></div>
+                <div class="center">Smart Home</div>
+            </ons-toolbar>
+
+            <div class="toast toast--material">
+                <div class="toast__message toast--material__message">Add or control IoT devices here</div>
+            </div>
+
+            <ul class="list">
+                <li class="list-header">
+                    Outside
+                </li>
+                <li class="list-item">
+                    <div class="list-item__center">
+                        Front Gate Lock
+                    </div>
+                    <div class="list-item__right">
+                        <label class="switch">
+                            <input type="checkbox" class="switch__input" checked>
+                            <div class="switch__toggle">
+                                <div class="switch__handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="list-item__center">
+                        Front Door Lock
+                    </div>
+                    <div class="list-item__right">
+                        <label class="switch">
+                            <input type="checkbox" class="switch__input">
+                            <div class="switch__toggle">
+                                <div class="switch__handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+
+                <li class="list-header">
+                    Living Room
+                </li>
+                <li class="list-item">
+                    <div class="list-item__center">
+                        Lamp 1
+                    </div>
+                    <div class="list-item__right">
+                        <label class="switch">
+                            <input type="checkbox" class="switch__input">
+                            <div class="switch__toggle">
+                                <div class="switch__handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+
+                <li class="list-header">
+                    Master Bed Room
+                </li>
+                <li class="list-item">
+                    <div class="list-item__center">
+                        Lamp 1
+                    </div>
+                    <div class="list-item__right">
+                        <label class="switch">
+                            <input type="checkbox" class="switch__input">
+                            <div class="switch__toggle">
+                                <div class="switch__handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="list-item__center">
+                        Lamp 2
+                    </div>
+                    <div class="list-item__right">
+                        <label class="switch">
+                            <input type="checkbox" class="switch__input">
+                            <div class="switch__toggle">
+                                <div class="switch__handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="fab" style="bottom: 70px;display: block;position: absolute;right: 20px;"><i class="zmdi zmdi-plus"></i></button>
+
+        </ons-page>
+    </template>
+
+    <template id="emergency-page.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left"><ons-back-button>Back</ons-back-button></div>
+                <div class="center">Emergency Call</div>
+            </ons-toolbar>
+
+            <div style="    font-size: 20em;
+    text-align: center;
+    margin-top: 15vh;">
+                <i class="zmdi zmdi-phone-in-talk"></i>
+            </div>
+            <div style="    background: red;
+    margin: 0 auto;
+    display: block; width: 150px; border-radius: 5px; text-align: center">
+                <button class="button" style="background: red">End Call</button>
+            </div>
+
+
+        </ons-page>
+    </template>
 </ons-page>

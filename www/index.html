@@ -10,17 +10,20 @@
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link id="theme" rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script>
     ons.ready(function() {
-      console.log("Onsen UI is ready!");
+      //
     });
 
     if (ons.platform.isIPhoneX()) {
       document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
       document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
     }
+
+    //document.querySelector('#theme').setAttribute('href', 'lib/onsenui/css/dark-onsen-css-components.css');
   </script>
 </head>
 <body>
@@ -33,7 +36,7 @@
     </ons-tab>
     <ons-tab page="/modules/billing.html" label="Billing" icon="md-receipt">
     </ons-tab>
-    <ons-tab page="/modules/smarthome.html" label="Smart Home" icon="md-remote-control">
+    <ons-tab page="/modules/management.html" label="Management" icon="md-apps">
     </ons-tab>
     <ons-tab page="/modules/settings.html" label="Settings" icon="md-settings">
     </ons-tab>

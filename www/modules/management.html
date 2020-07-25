@@ -1,0 +1,31 @@
+<ons-page id="smarthome-tab">
+    <ons-navigator swipable id="manageNavigator" page="ma-index.html"></ons-navigator>
+
+    <div class="toast toast--material">
+        <div class="toast__message toast--material__message">Management tab for other services (like IOI Community)</div>
+    </div>
+
+    <template id="ma-index.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">Management</div>
+            </ons-toolbar>
+
+            <ul style="margin-top: 20px;" class="list list--inset">
+                <li class="list-item list--inset__item list-item--chevron list-item--tappable">
+                    <div class="list-item__center"><i class="zmdi zmdi-whatsapp"></i>
+                        &nbsp;Report to landlord</div>
+                </li>
+                <li class="list-item list--inset__item list-item--chevron list-item--tappable">
+                    <div class="list-item__center"><i class="zmdi zmdi-car"> </i>
+                        &nbsp;Reserve parking for visitors</div>
+                </li>
+                <li class="list-item list--inset__item list-item--chevron list-item--tappable">
+                    <div class="list-item__center"><i class="zmdi zmdi-long-arrow-return"> </i>
+                        &nbsp;Move out</div>
+                </li>
+            </ul>
+
+        </ons-page>
+    </template>
+</ons-page>
